@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorWhite"
+    tools:context="com.example.toni.pjesmarrjaestudenteve_v1.home">
+
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/logo_image"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+      >
+
+        <EditText
+            android:id="@+id/etTitulli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_edittext"
+            android:layout_weight="20"
+            android:hint="@string/etPerdoruesi"
+            android:minHeight="30dp"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/layout_username"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+
+        >
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:layout_weight="20"
+            android:hint="@string/etFjalkalimi"
+            android:background="@drawable/border_edittext"
+            android:padding="5dp"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStarto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnQasja"
+        android:layout_weight="40"
+        android:layout_below="@id/layout_password"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorGray"
+        android:tooltipText="*"
+        />
+
+    <TextView
+        android:id="@+id/tvUsernamePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:minHeight="30dp"
+        android:textColor="@color/colorRed"
+        android:text=""
+        android:textSize="20dp"
+        android:gravity="center"
+
+        />
+
+
+</RelativeLayout>

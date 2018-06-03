@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pjesëmarrja e studentëve</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnQasja">QASJA</string>
+    <string name="etPerdoruesi">PërdoruesiID</string>
+    <string name="etFjalkalimi">Fjalëkalimi</string>
+    <string name="tvKrijoPjesmarrje">Krijo Pjesëmarrje</string>
+    <string name="tvGjeneroPdf">Gjenero Pdf</string>
+    <string name="tvShikoPjesmarrjen">Shiko Pjesëmarrjen</string>
+
+</resources>

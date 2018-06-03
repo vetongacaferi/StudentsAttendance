@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <Spinner
+        android:id="@+id/spinLenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:hint="Lenda"
+        android:layout_margin="5dp"
+        android:tooltipText="Lenda"
+        />
+
+
+    <EditText
+        android:id="@+id/etTema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tema"
+        android:layout_below="@+id/spinLenda"
+        android:layout_marginBottom="2dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutGrupiJava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/etTema"
+        android:weightSum="100"
+
+        >
+
+        <EditText
+            android:id="@+id/etGrupi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etTema"
+            android:hint="Grupi"
+            android:layout_margin="5dp"
+            android:layout_weight="30"
+            />
+
+        <EditText
+            android:id="@+id/etJava"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Java"
+            android:layout_margin="5dp"
+            android:layout_weight="70"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnkrijoEvidenc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="krijo evidenc"
+        android:layout_below="@id/layoutGrupiJava"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tvMesazhiPerKlikim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnkrijoEvidenc"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorRed"
+        />
+
+</RelativeLayout>
